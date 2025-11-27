@@ -4,7 +4,7 @@ import random
 import os
 from flask import Flask
 app = Flask(__name__)
-FLICKR_PHOTO_URL = os.environ.get("FLICKR_URL", "https://www.flickr.com/photos/203492062@N02/54838603755/in/dateposted/")
+FLICKR_PHOTO_URL = os.environ.get("FLICKR_URL", "https://www.flickr.com/photos/pigxx/")
 NUMBER_OF_REQUESTS = int(os.environ.get("NUM_REQUESTS", 10000)) # 預設值設定較小，防止誤觸發
 DELAY_SECONDS = float(os.environ.get("DELAY", 0.1))
 HEADERS = {
