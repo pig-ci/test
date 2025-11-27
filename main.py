@@ -5,7 +5,7 @@ import os
 from flask import Flask
 app = Flask(__name__)
 FLICKR_PHOTO_URL = os.environ.get("FLICKR_URL", "https://www.flickr.com/photos/203492062@N02/54838603755/in/dateposted/")
-NUMBER_OF_REQUESTS = int(os.environ.get("NUM_REQUESTS", 10)) # 預設值設定較小，防止誤觸發
+NUMBER_OF_REQUESTS = int(os.environ.get("NUM_REQUESTS", 10000)) # 預設值設定較小，防止誤觸發
 DELAY_SECONDS = float(os.environ.get("DELAY", 0.1))
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
